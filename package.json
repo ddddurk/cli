@@ -3,7 +3,15 @@
   "version": "0.0.0",
   "type": "module",
   "license": "MIT",
+  "bin": {
+    "ddddurk": "./dist/index.js"
+  },
+  "files": [
+    "./dist"
+  ],
   "scripts": {
+    "build": "tsup && cp -r ./droplet ./dist/droplet",
+    "build:watch": "tsup --watch",
     "chore:droplet": "droplet",
     "chore:lint": "yarn chore:lint:eslint && yarn chore:lint:prettier",
     "chore:lint:eslint": "eslint --fix './**/*.{js,json,jsx,ts,tsx}'",
@@ -12,11 +20,15 @@
     "test:typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@dddstack/droplet": "^0.0.1"
+    "@dddstack/droplet": "^0.0.2",
+    "chalk": "^5.2.0",
+    "gradient-string": "^2.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
+    "@types/gradient-string": "^1.1.2",
+    "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
     "eslint": "^8.38.0",
@@ -25,6 +37,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
+    "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   }
 }
