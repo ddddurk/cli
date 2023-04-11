@@ -1,8 +1,19 @@
 {
   "name": "@ddddurk/cli",
   "version": "0.0.0",
-  "type": "module",
+  "description": "@ddddurk/cli",
+  "keywords": [],
+  "homepage": "https://github.com/ddddurk/cli",
+  "bugs": {
+    "url": "https://github.com/ddddurk/cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddddurk/cli"
+  },
   "license": "MIT",
+  "author": "ddddurk <ddddurk@proton.me>",
+  "type": "module",
   "bin": {
     "ddddurk": "./dist/index.js"
   },
@@ -12,10 +23,14 @@
   "scripts": {
     "build": "tsup && cp -r ./droplet ./dist/droplet",
     "build:watch": "tsup --watch",
-    "chore:droplet": "droplet",
+    "chore:changeset": "changeset",
+    "chore:droplet": "node ./dist/index.js",
     "chore:lint": "yarn chore:lint:eslint && yarn chore:lint:prettier",
     "chore:lint:eslint": "eslint --fix './**/*.{js,json,jsx,ts,tsx}'",
     "chore:lint:prettier": "prettier --write .",
+    "ci:publish:snapshot": "yarn build && changeset publish --tag snapshot",
+    "ci:version": "changeset version",
+    "ci:version:snapshot": "changeset version --snapshot snapshot",
     "prepare": "husky install",
     "test:typecheck": "tsc --noEmit"
   },
@@ -25,6 +40,8 @@
     "gradient-string": "^2.0.2"
   },
   "devDependencies": {
+    "@changesets/changelog-git": "^0.1.14",
+    "@changesets/cli": "^2.26.1",
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
     "@types/gradient-string": "^1.1.2",
@@ -37,7 +54,11 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
+    "prettier-plugin-packagejson": "^2.4.3",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
