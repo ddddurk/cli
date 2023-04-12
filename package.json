@@ -2,7 +2,9 @@
   "name": "@ddddurk/cli",
   "version": "0.1.1",
   "description": "@ddddurk/cli",
-  "keywords": [],
+  "keywords": [
+    "ddddurk"
+  ],
   "homepage": "https://github.com/ddddurk/cli",
   "bugs": {
     "url": "https://github.com/ddddurk/cli/issues"
@@ -36,7 +38,7 @@
     "test:typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@dddstack/droplet": "^0.0.3",
+    "@dddstack/droplet": "^0.0.5",
     "chalk": "^5.2.0",
     "gradient-string": "^2.0.2"
   },
