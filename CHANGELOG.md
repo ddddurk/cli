@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 0.1.2
+
+### Patch Changes
+
+- 5755c38: Fix droplet_file_status.yaml.hbs
+
 ## 0.1.1
 
 ### Patch Changes
