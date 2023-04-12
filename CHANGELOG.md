@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 0.1.1
+
+### Patch Changes
+
+- 0830887: fix(deps): update dependency @dddstack/droplet to ^0.0.3
+
 ## 0.1.0
 
 ### Minor Changes
