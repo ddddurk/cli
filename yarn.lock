@@ -398,35 +398,35 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@dddstack/droplet-clean@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet-clean/-/droplet-clean-0.0.2.tgz#777a16253b74547440d8c7a65ab5c80cd48c7c34"
-  integrity sha512-eeENrAa4y1l9H7TrqTIEazWau7pp2b4oZS6a0Uqdi+nSXPT8k2+E2LRmY5NlL71KmsmHhglfc6ChXRY0oNTy/A==
+"@dddstack/droplet-clean@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet-clean/-/droplet-clean-0.0.3.tgz#b3d13f84515bb6e438896114085e87e47a7c8617"
+  integrity sha512-hlhsLtXdtuqsaJxPxzu0z4C5TiTb8rJFWaUWQo2rWWk4fyUIUaYCjlcPWaamArVti/FdrNFzvJKplCMzLUeWKg==
   dependencies:
     "@dddstack/droplet-constants" "0.0.2"
 
-"@dddstack/droplet-commander@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet-commander/-/droplet-commander-0.0.2.tgz#d602dc05b5c6e567af2dff13059288b68e2ea586"
-  integrity sha512-ScZlJsgAYC6iH8uwX99S4mrn40WJmWS90sZrNlGlU1S+HHFcybJOc1nvxk4ggyieyMREzT/+tOtPQKA5jH/odQ==
+"@dddstack/droplet-commander@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet-commander/-/droplet-commander-0.0.4.tgz#5f64e4283ce913547fd1e57c97ba9cac20d2020d"
+  integrity sha512-13tgPOzXsjkoOR+XEfpazyoAwBFpz5p+t/0MH64HlRKvcML6BwVBVarlaNCi44cSX2DoMHbGLiYWQXF/y6U2QA==
   dependencies:
     "@dddstack/droplet-constants" "0.0.2"
     "@dddstack/droplet-copy" "0.0.2"
-    "@dddstack/droplet-drop" "0.0.2"
+    "@dddstack/droplet-drop" "0.0.3"
     "@dddstack/droplet-gradient" "0.0.2"
-    "@dddstack/droplet-list-files" "0.0.2"
-    "@dddstack/droplet-list-templates" "0.0.2"
+    "@dddstack/droplet-list-files" "0.0.3"
+    "@dddstack/droplet-list-templates" "0.0.4"
     "@dddstack/droplet-log" "0.0.2"
     "@dddstack/droplet-options" "0.0.2"
-    "@dddstack/droplet-prompts" "0.0.2"
+    "@dddstack/droplet-prompts" "0.0.4"
     chalk "^5.2.0"
     commander "^10.0.0"
     prompts "^2.4.2"
 
-"@dddstack/droplet-compile@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet-compile/-/droplet-compile-0.0.2.tgz#094e1d906bb17257e25f37e239224be9bc29dab7"
-  integrity sha512-zmji925F/GWmm0wokYFGaUcJYmyUnEWLQIbUl0ulZwenBGe/CTNO3RKJh633AMNu+1WqQWdmeubnetcd7QLfHA==
+"@dddstack/droplet-compile@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet-compile/-/droplet-compile-0.0.3.tgz#ccbbf12790bca240793659abebf248ec73220b9d"
+  integrity sha512-ikqAH1LZSeaTlhEXgUh/Vufgxt3glM5cdSsQjTCVDCg6b/1ASdPoPl34PuFnAHfuy4X37NhPrOKzjz+8qdw0pg==
   dependencies:
     handlebars "^4.7.7"
 
@@ -442,13 +442,13 @@
   dependencies:
     "@dddstack/droplet-log" "0.0.2"
 
-"@dddstack/droplet-drop@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet-drop/-/droplet-drop-0.0.2.tgz#44bb06b56ea1322502f9e5881ef8fd6114a088a0"
-  integrity sha512-XxXrN2dlxXeo5BZ1MhDcjyLvdsbLFhoLiaphSLsl7t3xQ3SA40iCMS2kxZ+hBW6a2B2+8zfnHEBfiqxoVCmTNg==
+"@dddstack/droplet-drop@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet-drop/-/droplet-drop-0.0.3.tgz#3f049725069cb122e60617f74e4bda1f75cc708a"
+  integrity sha512-2vvMLeDmYUDPAFMpjXTh1XY5Ygg++lPncxn/HGAycyXA0FkdtDjXRDyPtUPt3K98G/BcHC+Ziw8JWC7briH7Qw==
   dependencies:
-    "@dddstack/droplet-compile" "0.0.2"
-    "@dddstack/droplet-list-files" "0.0.2"
+    "@dddstack/droplet-compile" "0.0.3"
+    "@dddstack/droplet-list-files" "0.0.3"
     "@dddstack/droplet-log" "0.0.2"
 
 "@dddstack/droplet-gradient@0.0.2":
@@ -459,23 +459,23 @@
     chalk "4.1.2"
     gradient-string "^2.0.2"
 
-"@dddstack/droplet-list-files@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet-list-files/-/droplet-list-files-0.0.2.tgz#a607708639d69e8aa5374291f0b9df2651ffcfc8"
-  integrity sha512-iEvuffS8RHvg7jmkrdp/y/V7Ip+Sjv/muMmK1HyFDZAb0Wa7W+OavyhmSObkatPDDqP91lMZ7kKU9eNFbHDG5g==
+"@dddstack/droplet-list-files@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet-list-files/-/droplet-list-files-0.0.3.tgz#52649c4d62a43d8423fc5eaed34ff84c9b594b00"
+  integrity sha512-/QKDB2w/c1nxBKSH8izpBAzrCIf/cvPGesKAGttCWaJjbNbfjGecn5xNlhNvZ0ut5JVnbxSj53XfaEfx0o6tvA==
   dependencies:
-    "@dddstack/droplet-clean" "0.0.2"
+    "@dddstack/droplet-clean" "0.0.3"
     "@dddstack/droplet-constants" "0.0.2"
-    "@dddstack/droplet-trim" "0.0.2"
+    "@dddstack/droplet-trim" "0.0.3"
 
-"@dddstack/droplet-list-templates@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet-list-templates/-/droplet-list-templates-0.0.2.tgz#00a6df831e20d82a17df47d6b77bb232e925b77a"
-  integrity sha512-XivfWpjUbvSpJ8ypuZCKDvZ29T4SnyYkirHAFlfCjTl/QP83HshK7qKujF1x/WI3nkyOWzjbyYFBa39VAeWgBQ==
+"@dddstack/droplet-list-templates@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet-list-templates/-/droplet-list-templates-0.0.4.tgz#4e195bb403cb8b02511ee4f95f27bab981923853"
+  integrity sha512-fmQ25+wC8NK+eLrpR3eAMP+zeIJG+4r/psZjIVRQ2Eq+ZqUZbBsFzCiIynXv3AihfV50e6NR3U/negb4u3hWmg==
   dependencies:
-    "@dddstack/droplet-clean" "0.0.2"
+    "@dddstack/droplet-clean" "0.0.3"
     "@dddstack/droplet-constants" "0.0.2"
-    "@dddstack/droplet-trim" "0.0.2"
+    "@dddstack/droplet-trim" "0.0.3"
 
 "@dddstack/droplet-log@0.0.2":
   version "0.0.2"
@@ -489,26 +489,26 @@
   resolved "https://registry.yarnpkg.com/@dddstack/droplet-options/-/droplet-options-0.0.2.tgz#b3aff0cc9e408e50e3ef101a036c40fc824c8d50"
   integrity sha512-d5pIUqqPT1coQEUvef9g3UJwBo3Luco/x8nUozn8Zk2EtXzIlH7fnhBjcNiQxmL56ykD4eBp3MOX6ilUMezdfg==
 
-"@dddstack/droplet-prompts@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet-prompts/-/droplet-prompts-0.0.2.tgz#4515e69f099748e35eeca1e9007a16ea4d0e306a"
-  integrity sha512-u9CAuUNkaiHjA02BS/fj0gUXsMlPELRWJO0zYOLYzl9DiCkP8O8RGfFqiBFyLfNIyXcbSncA+XmEfDvt0WzQ7Q==
+"@dddstack/droplet-prompts@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet-prompts/-/droplet-prompts-0.0.4.tgz#6081447c9ee8fbe120a0f63da9bed8fb2c2cafd5"
+  integrity sha512-qTqqRq0/GRYQHAnRVwYxGjkbzdQkT+FgZJnX3oJzJ1TPzUTMLFVAxcHKvHWeiHBQ/Kp6NMBdJresF4eM3qe15A==
   dependencies:
-    "@dddstack/droplet-list-files" "0.0.2"
-    "@dddstack/droplet-list-templates" "0.0.2"
+    "@dddstack/droplet-list-files" "0.0.3"
+    "@dddstack/droplet-list-templates" "0.0.4"
     prompts "^2.4.2"
 
-"@dddstack/droplet-trim@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet-trim/-/droplet-trim-0.0.2.tgz#0fe6dc6036be3b367d373c065d6fdddbfdb04ac5"
-  integrity sha512-GwzCiqaFEq4NPNV72YahVhKlswbgb9g9aGJL7Y2Lam0qMbHeZsZZn3HdWAjIKPrxGg017pjpmarMsT14rgOS+A==
-
-"@dddstack/droplet@^0.0.3":
+"@dddstack/droplet-trim@0.0.3":
   version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@dddstack/droplet/-/droplet-0.0.3.tgz#78f538b2cd3ce2f9da6afd3a16ab5229033c4468"
-  integrity sha512-rbe9DAZM0z+R51GigjjxGYVnP6gmH8neOYYwD2wGxRuArdbVqZxecOEjaRnT6QKiwwull1oYwb0Pawd/khjbUQ==
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet-trim/-/droplet-trim-0.0.3.tgz#d154c52dfdae0c0bf23833995dd7bbe36a11ab76"
+  integrity sha512-WMWRK7SVQT3bKeoFcPqHi12775xILJVAIB0nUWclB1iBMD4LKIor36qiL0/a7fRrmfFVCmpPvx1ZqfAMUd9LMQ==
+
+"@dddstack/droplet@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@dddstack/droplet/-/droplet-0.0.5.tgz#ac193a2700cd47021cbf6242282dd171550b0fd0"
+  integrity sha512-voSlr3G6J+RuUTo3oJLiUD58F6jGNujskmUBuOfc/CkaVO44MKwVf4ZvOJ1MRKN/RErpsVKyNR2YcOBS+DT7jQ==
   dependencies:
-    "@dddstack/droplet-commander" "0.0.2"
+    "@dddstack/droplet-commander" "0.0.4"
 
 "@esbuild/android-arm64@0.17.16":
   version "0.17.16"
