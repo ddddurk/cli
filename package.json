@@ -2,7 +2,9 @@
   "name": "@ddddurk/cli",
   "version": "0.1.1",
   "description": "@ddddurk/cli",
-  "keywords": [],
+  "keywords": [
+    "ddddurk"
+  ],
   "homepage": "https://github.com/ddddurk/cli",
   "bugs": {
     "url": "https://github.com/ddddurk/cli/issues"
