@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 0.1.3
+
+### Patch Changes
+
+- 5caa4fa: Update eslint/renovate
+
 ## 0.1.2
 
 ### Patch Changes
