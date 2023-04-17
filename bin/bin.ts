@@ -13,7 +13,7 @@ export const program = droplet({
 });
 
 console.log(
-  chalk.bold(gradientString(["#80FFAA", "#66EFFF", "#E368E3"])(">>> DDDDURK\n"))
+  chalk.bold(gradientString(["#80FFAA", "#66EFFF", "#E368E3"])(">>> DDDDURK"))
 );
 
 program.parse();
