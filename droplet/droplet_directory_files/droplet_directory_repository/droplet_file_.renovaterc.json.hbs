@@ -1,4 +1,13 @@
-{ "$schema": "https://docs.renovatebot.com/renovate-schema.json", "extends":
-["config:base"], "packageRules": [ { "groupName": "maintenance", "groupSlug":
-"maintenance", "matchPackagePatterns": ["*"], "matchUpdateTypes": ["minor",
-"patch"] } ], "schedule": ["monthly"] }
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "groupName": "maintenance",
+      "groupSlug": "maintenance",
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"]
+    }
+  ],
+  "schedule": ["monthly"]
+}
