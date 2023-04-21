@@ -38,7 +38,7 @@
     "test:typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@dddstack/droplet": "^0.0.5",
+    "@dddstack/droplet": "^0.0.6",
     "chalk": "^5.2.0",
     "gradient-string": "^2.0.2"
   },
