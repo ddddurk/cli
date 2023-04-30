@@ -18,17 +18,13 @@ jobs:
         with:
           node-version: 16.x
 
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> .npmrc
+      - run: echo "//registry.npmjs.org/:_authToken=secrets.NPM_TOKEN" >> .npmrc
         shell: bash
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-
-      - run: pnpm i --frozen-lockfile=false
+      - run: npm
         shell: bash
 
       - run: |
-          pnpm ci:version:snapshot
-          pnpm ci:publish:snapshot
+          npm ci:version:snapshot
+          npm ci:publish:snapshot
         shell: bash

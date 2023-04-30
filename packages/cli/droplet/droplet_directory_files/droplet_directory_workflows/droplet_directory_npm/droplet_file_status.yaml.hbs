@@ -20,14 +20,10 @@ jobs:
         with:
           node-version: 16.x
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-
-      - run: pnpm i --frozen-lockfile=false
+      - run: npm
         shell: bash
 
-      - run: pnpm build
+      - run: npm build
         shell: bash
 
   lint:
@@ -44,14 +40,30 @@ jobs:
         with:
           node-version: 16.x
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-
-      - run: pnpm i --frozen-lockfile=false
+      - run: npm
         shell: bash
 
-      - run: pnpm chore:lint
+      - run: npm chore:lint
+        shell: bash
+
+  test:
+    name: test
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@master
+        with:
+          node-version: 16.x
+
+      - run: npm
+        shell: bash
+
+      - run: npm
         shell: bash
 
   typecheck:
@@ -68,15 +80,8 @@ jobs:
         with:
           node-version: 16.x
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-
-      - run: pnpm i --frozen-lockfile=false
+      - run: npm
         shell: bash
 
-      - run: pnpm build
-        shell: bash
-
-      - run: pnpm test:typecheck
+      - run: npm
         shell: bash

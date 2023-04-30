@@ -1,68 +1,41 @@
 {
-  "name": "@ddddurk/cli",
-  "version": "0.1.4",
-  "description": "@ddddurk/cli",
-  "keywords": [
-    "ddddurk"
-  ],
-  "homepage": "https://github.com/ddddurk/cli",
-  "bugs": {
-    "url": "https://github.com/ddddurk/cli/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ddddurk/cli"
-  },
-  "license": "MIT",
-  "author": "ddddurk <ddddurk@proton.me>",
-  "type": "module",
-  "bin": {
-    "ddddurk": "./dist/index.js"
-  },
-  "files": [
-    "./dist"
-  ],
+  "name": "workspace",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "build": "tsup && cp -r ./droplet ./dist/droplet",
-    "build:watch": "tsup --watch",
+    "build": "pnpm --stream -r build",
+    "build:watch": "pnpm --stream -r build:watch",
     "chore:changeset": "changeset",
-    "chore:droplet": "node ./dist/index.js",
-    "chore:lint": "yarn chore:lint:eslint && yarn chore:lint:prettier",
-    "chore:lint:eslint": "eslint --fix './**/*.{js,json,jsx,ts,tsx}'",
-    "chore:lint:prettier": "prettier --write .",
-    "ci:publish": "yarn build && changeset publish",
-    "ci:publish:snapshot": "yarn build && changeset publish --tag snapshot",
+    "chore:lint": "pnpm chore:lint:prettier && pnpm chore:lint:eslint",
+    "chore:lint:eslint": "eslint --fix './**/*.{js,json,ts,yaml}'",
+    "chore:lint:prettier": "prettier --write --plugin-search-dir=. ./",
+    "ci:publish": "pnpm build && changeset publish",
+    "ci:publish:snapshot": "pnpm build && changeset publish --tag snapshot",
     "ci:version": "changeset version",
     "ci:version:snapshot": "changeset version --snapshot snapshot",
+    "ddddurk": "node ./packages/cli/dist/index.js",
     "prepare": "husky install",
-    "test:typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@dddstack/droplet": "^0.0.6",
-    "chalk": "^5.2.0",
-    "gradient-string": "^2.0.2"
+    "test": "pnpm --stream -r test",
+    "test:typecheck": "pnpm --stream -r test:typecheck",
+    "test:watch": "pnpm --stream -r test:watch"
   },
   "devDependencies": {
     "@changesets/changelog-git": "^0.1.14",
     "@changesets/cli": "^2.26.1",
-    "@commitlint/cli": "^17.5.1",
-    "@commitlint/config-conventional": "^17.4.4",
-    "@types/gradient-string": "^1.1.2",
-    "@types/node": "^18.15.11",
-    "@typescript-eslint/eslint-plugin": "^5.58.0",
-    "@typescript-eslint/parser": "^5.58.0",
-    "eslint": "^8.38.0",
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint": "^8.39.0",
+    "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-plugin-yaml": "^0.5.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.1",
-    "prettier": "^2.8.7",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
     "prettier-plugin-packagejson": "^2.4.3",
-    "tsup": "^6.7.0",
     "typescript": "^5.0.4"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

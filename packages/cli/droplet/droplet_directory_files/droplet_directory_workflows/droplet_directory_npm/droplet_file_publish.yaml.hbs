@@ -20,19 +20,15 @@ jobs:
         with:
           node-version: 16.x
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 7
-
-      - run: pnpm i --frozen-lockfile=false
+      - run: npm
         shell: bash
 
       - uses: changesets/action@v1
         with:
-          version: pnpm ci:version
+          version: npm ci:version
           commit: "ci(changesets): version packages"
           title: "ci(changesets): version packages"
-          publish: pnpm ci:publish
+          publish: npm ci:publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: secrets.GITHUB_TOKEN
+          NPM_TOKEN: secrets.NPM_TOKEN
