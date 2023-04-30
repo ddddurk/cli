@@ -1,5 +1,0 @@
----
-"@ddddurk/cli": patch
----
-
-"\n"
