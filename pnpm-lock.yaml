@@ -65,8 +65,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       '@dddstack/droplet-core':
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.0.1
+        version: 2.0.1
       chalk:
         specifier: ^5.2.0
         version: 5.2.0
@@ -488,8 +488,8 @@ packages:
       chalk: 5.2.0
     dev: false
 
-  /@dddstack/droplet-core@2.0.0:
-    resolution: {integrity: sha512-qROcag2fAXAE7wLlCY9meVuwO+ppTsLfnJS6SsPjz3FrpMYKIjTXmWlZmVDEuOK8lP0gBboTjUaSm3/hIGIFrQ==}
+  /@dddstack/droplet-core@2.0.1:
+    resolution: {integrity: sha512-bnn0JPZL6AqGSuKPtDKbNz2T2hTRrcMSNaYaSSlhIBqlMYdLD1LuIyXnnRvTSww1MSad2/rMZ1zBEyGuY4sDwg==}
     dependencies:
       '@astrojs/cli-kit': 0.2.3
       '@ddddurk/colors': 1.0.1
