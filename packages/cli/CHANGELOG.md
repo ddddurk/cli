@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 1.0.2
+
+### Patch Changes
+
+- c9a3697: Fix entry
+
 ## 1.0.1
 
 ### Patch Changes
