@@ -1,0 +1,45 @@
+{
+  "name": "@ddddurk/cli",
+  "version": "0.1.4",
+  "description": "@ddddurk/cli",
+  "keywords": [
+    "ddddurk"
+  ],
+  "homepage": "https://github.com/ddddurk/cli",
+  "bugs": {
+    "url": "https://github.com/ddddurk/cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddddurk/cli",
+    "directory": "packages/cli"
+  },
+  "license": "MIT",
+  "author": "ddddurk <ddddurk@proton.me>",
+  "type": "module",
+  "bin": {
+    "ddddurk": "./dist/index.js"
+  },
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsup && cp -r ./droplet ./dist/droplet",
+    "build:watch": "tsup --watch",
+    "test:typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ddddurk/colors": "^1.0.1",
+    "@ddddurk/kit": "^1.0.0",
+    "@dddstack/droplet-core": "^2.0.0",
+    "chalk": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
