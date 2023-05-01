@@ -62,11 +62,11 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1
       '@ddddurk/kit':
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^1.1.2
+        version: 1.1.2
       '@dddstack/droplet-core':
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^2.1.2
+        version: 2.1.2
       chalk:
         specifier: ^5.2.0
         version: 5.2.0
@@ -482,18 +482,18 @@ packages:
     resolution: {integrity: sha512-oj/5DVqfpuVKUVsQVS5rCLl+bSfLKnu5hMdAb9jZ0Di/N6S3iS3Vee3jxDxgdzmYEekBzG3Jhg+JWRTSBsac1g==}
     dev: false
 
-  /@ddddurk/kit@1.0.0:
-    resolution: {integrity: sha512-haAaLhowQAOLWFG+oDJOIpeHxMjTo2WcMTHOIuXAL+LKRpm/33ZuutsWxmXVwMw+nXTVT5DtJcSZqqdbDYN+DQ==}
+  /@ddddurk/kit@1.1.2:
+    resolution: {integrity: sha512-jkSFPdp0DFXmfSBPkDyaav75JpKRdmV216hiO12SW9zy2Qv2F2iq+lZO3tB5l8xeVhquKk4xvKXyW1rEMhNQ3Q==}
     dependencies:
       chalk: 5.2.0
     dev: false
 
-  /@dddstack/droplet-core@2.0.1:
-    resolution: {integrity: sha512-bnn0JPZL6AqGSuKPtDKbNz2T2hTRrcMSNaYaSSlhIBqlMYdLD1LuIyXnnRvTSww1MSad2/rMZ1zBEyGuY4sDwg==}
+  /@dddstack/droplet-core@2.1.2:
+    resolution: {integrity: sha512-lXy1Pj3Nc10IEWoAymUNramKk+ukMzxLjXMexgtC3xa4c52oB8IIUVMT1CqyPRzrFwsMOK5ejlHQUcbCkUDOvQ==}
     dependencies:
       '@astrojs/cli-kit': 0.2.3
       '@ddddurk/colors': 1.0.1
-      '@ddddurk/kit': 1.0.0
+      '@ddddurk/kit': 1.1.2
       chalk: 5.2.0
       commander: 10.0.1
       handlebars: 4.7.7
