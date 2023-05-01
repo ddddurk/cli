@@ -1,5 +1,14 @@
 # @ddddurk/cli
 
+## 1.1.0
+
+### Minor Changes
+
+- 4291354: Publish 1.1.0
+
+  - update `@ddddurk/kit`
+  - update `@dddstack/droplet-core`
+
 ## 1.0.3
 
 ### Patch Changes
