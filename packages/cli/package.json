@@ -30,9 +30,10 @@
   },
   "dependencies": {
     "@ddddurk/colors": "^1.0.1",
-    "@ddddurk/kit": "^1.0.0",
-    "@dddstack/droplet-core": "^2.0.1",
-    "chalk": "^5.2.0"
+    "@ddddurk/kit": "^1.1.2",
+    "@dddstack/droplet-core": "^2.1.2",
+    "chalk": "^5.2.0",
+    "terminal-image": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.16.3",

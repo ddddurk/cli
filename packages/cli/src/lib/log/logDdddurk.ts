@@ -1,6 +1,4 @@
-import { log } from "@ddddurk/kit";
-
-import { colors } from "../colors";
+import { logLabel } from "./logLabel";
 
 export const logDdddurk = (text: string) =>
-  log(text, { label: { hex: colors.cyan, text: "ddddurk" } });
+  logLabel("ddddurk", text);

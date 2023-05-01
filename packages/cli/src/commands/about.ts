@@ -1,6 +1,6 @@
 import chalk from "chalk";
 
-import { colors, log, logLabel } from "../lib";
+import { log, logLabel } from "../lib";
 
 export const about = () => {
   log(
@@ -25,8 +25,7 @@ export const about = () => {
 
   logLabel(
     "more",
-    "Visit my website at " +
-      chalk.hex(colors.cyan)("https://ddddurk.com")
+    "Visit my website at " + chalk.bold("https://ddddurk.com")
   );
 
   log("Run " + chalk.bold("ddddurk commands") + " for more.");
