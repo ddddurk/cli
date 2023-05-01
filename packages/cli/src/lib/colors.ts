@@ -1,8 +1,8 @@
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
-const pink = require("@ddddurk/colors/colors/pink.json");
+const indigo = require("@ddddurk/colors/colors/indigo.json");
 
 export const colors = {
-  ddddurk: pink[600]
+  ddddurk: indigo[600]
 };
