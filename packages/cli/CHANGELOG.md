@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 1.1.1
+
+### Patch Changes
+
+- a77c2f8: 05/02/2023 update files
+
 ## 1.1.0
 
 ### Minor Changes
