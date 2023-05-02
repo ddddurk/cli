@@ -75,7 +75,7 @@ jobs:
       - run: pnpm i --frozen-lockfile=false
         shell: bash
 
-      - run: pnpm test
+      - run: pnpm chore:test
         shell: bash
 
   typecheck:
@@ -97,6 +97,9 @@ jobs:
           version: 7
 
       - run: pnpm i --frozen-lockfile=false
+        shell: bash
+
+      - run: pnpm build
         shell: bash
 
       - run: pnpm test:typecheck
