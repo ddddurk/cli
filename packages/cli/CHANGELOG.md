@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 1.1.2
+
+### Patch Changes
+
+- b0e506a: 05/02/2023 update files 2
+
 ## 1.1.1
 
 ### Patch Changes
