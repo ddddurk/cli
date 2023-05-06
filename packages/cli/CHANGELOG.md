@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 1.1.6
+
+### Patch Changes
+
+- e935e25: 05/05/2023 update files
+
 ## 1.1.5
 
 ### Patch Changes
