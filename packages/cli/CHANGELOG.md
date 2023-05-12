@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 1.1.7
+
+### Patch Changes
+
+- a4e2966: Update about
+
 ## 1.1.6
 
 ### Patch Changes
