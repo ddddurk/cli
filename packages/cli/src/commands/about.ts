@@ -12,13 +12,13 @@ export const about = () => {
   console.log("\n");
 
   log(
-    "I'm passionate about building beautiful web applications, creating dynamic user interfaces, and making accessible data visualizations."
+    "I'm passionate about building great web applications, creating dynamic user interfaces, and making accessible data visualizations."
   );
 
   console.log("\n");
 
   log(
-    "I'm committed to a Catholic, holistic, and resolute lifestyle."
+    "I'm committed to a Catholic, holistic, and purpose-filled lifestyle."
   );
 
   console.log("\n");
