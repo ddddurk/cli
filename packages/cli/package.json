@@ -26,7 +26,9 @@
   "scripts": {
     "build": "tsup && cp -r ./droplet ./dist/droplet",
     "build:watch": "tsup --watch",
-    "test:typecheck": "tsc --noEmit"
+    "test:typecheck": "tsc --noEmit",
+    "tsc": "tsc",
+    "tsup": "tsup"
   },
   "dependencies": {
     "@ddddurk/colors": "^1.0.1",
@@ -36,7 +38,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.16.3",
-    "tsup": "^6.7.0",
+    "tsup": "^7.0.0",
     "typescript": "^5.0.4"
   },
   "publishConfig": {
