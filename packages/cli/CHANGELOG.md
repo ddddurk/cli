@@ -1,5 +1,11 @@
 # @ddddurk/cli
 
+## 1.2.0
+
+### Minor Changes
+
+- 9f0985a: Update template
+
 ## 1.1.7
 
 ### Patch Changes
