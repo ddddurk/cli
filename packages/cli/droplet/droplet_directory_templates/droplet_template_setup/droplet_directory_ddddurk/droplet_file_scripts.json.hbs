@@ -3,6 +3,9 @@
     "chore:lint": "pnpm chore:lint:prettier && pnpm chore:lint:eslint",
     "chore:lint:eslint": "eslint --fix './**/*.{js,json,mdx,ts,tsx,yaml}'",
     "chore:lint:prettier": "prettier --write --plugin-search-dir=. .",
-    "prepare": "husky install"
+    "eslint": "eslint",
+    "prepare": "pnpm prepare:husky",
+    "prepare:husky": "husky install",
+    "prettier": "prettier"
   },
 }
